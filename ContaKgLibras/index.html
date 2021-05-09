@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Conta Quilo Libras</title>
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		function adicionarConteudo(pagina) {
+			$("#divConteudo").load(pagina);
+		}
+	</script>  
+	
+	
+</head>
+
+<body>
+
+	<div id="divIndex">
+		<h1>Index</h1>
+	</div>
+
+	<div id="divConteudo">
+		<h1>Conteúdo</h1>
+	</div>
+
+	<div style="text-align: center;">	
+		<button tooltip="gif/inicio.gif" flow="left" tooltip-size="medium" onclick="adicionarConteudo('modulos/atividades/construirgrafico/construirgrafico.html');">Atividade 1</button>	
+		<button tooltip="Atividade 2" flow="up" tooltip-size="medium" onclick="adicionarConteudo('modulos/atividades/graficobarras/questao1.html');">Atividade 2</button>
+		<button tooltip="Atividade 3" flow="right" tooltip-size="large" onclick="adicionarConteudo('modulos/atividades/graficopizza/questao1.html');">Atividade 3</button>
+	</div>
+
+<link rel="stylesheet" href="css/tooltiplibras/tooltiplibras-1.0.0.css">
+</body>
+</html>
