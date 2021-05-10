@@ -1,0 +1,13 @@
+.caixa-botoes {
+	background-image: url('../imagens/menu/caixa-botoes.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;	
+	
+	text-align: center;
+	height: 5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

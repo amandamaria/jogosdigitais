@@ -1,13 +1,12 @@
-﻿/* START TOOLTIP STYLES */
+﻿/* Configuração padrão de todos os tooltips */
 [tooltip] {
-  position: relative; /* opinion 1 */
+  position: relative;
 }
 
-/* Applies to all tooltips */
 [tooltip]::before,
 [tooltip]::after {
-  text-transform: none; /* opinion 2 */
-  font-size: .9em; /* opinion 3 */
+  text-transform: none; 
+  font-size: .9em; 
   line-height: 1;
   user-select: none;
   pointer-events: none;
@@ -21,7 +20,7 @@
   z-index: 1001;
 }
 
-/*É aqui que o tooltip é criado*/
+/*É aqui que balão do tooltip é configurado*/
 [tooltip]::after {
   content: ''; 
   
@@ -38,7 +37,7 @@
   
   /*Posição e alinhamento do gif dentro do component*/
   background-image: url('gif/inicio.gif');
-  background-color: transparent;
+  background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,0 +1,131 @@
+body, html {
+  height: 100%;
+}
+
+body {
+	background-image: url('../imagens/bg-padrao.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.caixa-atividade-marrom {	
+	text-align: center;
+	width: 100%;
+	max-height: 40em;
+	min-height: 25em;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
+	background-image: url('../imagens/caixa-marrom.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+
+.conteudo-atividade {
+	width: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.caixa-atividade-rosa {	
+	text-align: center;
+	width: 60%;
+	max-height: 40em;
+	min-height: 25em;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	
+	margin-right: 2px;
+	box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.45);
+
+	background-image: linear-gradient(to bottom right, #c26156ff , #652330ff);
+	border: 10px solid #652330ff;
+	border-radius: 10px;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	
+}
+
+.caixa-pergunta {	
+	text-align: left;
+	width: 30%;
+	max-height: 40em;
+	min-height: 25em;
+	align-items: center;
+	display: flex;
+	justify-content: left;
+	
+	margin-left: 2px;
+	box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.45);
+	
+	background-image: linear-gradient(to bottom left, #fce799ff , #e5891dff);
+	border: 8px solid #e5891dff;
+	border-radius: 10px;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.enunciado {
+	width: 100%;
+}
+
+
+/*Formatação botão de escolha da atividade*/
+.bt-escolha-atividade {
+  position: relative;
+  width: 15%;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.img-atividade {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-texto-atividade {
+  width: 95%;
+  height: 100%;
+}
+
+.texto-sobreposto {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.bt-escolha-atividade:hover .texto-sobreposto {
+  bottom: 0;
+  height: 100%;
+}
+
+.texto-sobreposto-conteudo {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/*Fim formatação botão de escolha da atividade*/
+
+
+
