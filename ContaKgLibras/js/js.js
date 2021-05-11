@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	adicionarConteudo("modulos/inicio.html");			
+	adicionarConteudo("modulos/inicio.html");
 });
 
 function adicionarConteudo(pagina) {

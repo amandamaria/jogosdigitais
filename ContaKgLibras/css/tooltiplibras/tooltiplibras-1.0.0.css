@@ -29,7 +29,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 1ch, 1.5ch;
   border-radius: .83ch;
   box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.45); 
   color: #ffff;
