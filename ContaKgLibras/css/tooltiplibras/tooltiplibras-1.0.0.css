@@ -5,8 +5,7 @@
 
 [tooltip]::before,
 [tooltip]::after {
-  text-transform: none; 
-  font-size: .9em; 
+  text-transform: none;  
   line-height: 1;
   user-select: none;
   pointer-events: none;
@@ -50,18 +49,21 @@
 [tooltip][tooltip-size^="small"]::after {
   width: 9em;
   height: 5em;
+  font-size: small; 
 }
 
 [tooltip][tooltip-size^="medium"]::before,
 [tooltip][tooltip-size^="medium"]::after {
   width: 12em;
   height: 7em;
+  font-size: medium; 
 }
 
 [tooltip][tooltip-size^="large"]::before,
 [tooltip][tooltip-size^="large"]::after {
   width: 15em;
   height: 9em;
+  font-size: large; 
 }
 /*Fim define o tamanho do tooltip*/
 
