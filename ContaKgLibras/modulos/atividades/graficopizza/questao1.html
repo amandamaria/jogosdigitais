@@ -13,11 +13,11 @@
 	<div class="conteudo-atividade">		
 		<div class="caixa-atividade-rosa">
 			<h2 class="titulo-grafico">
-				<p tooltip="gif/inicio.gif" flow="up" tooltip-size="medium">
-				Titulo do gráfico</p>
+				<p tooltip="gif/votos_alunos.gif" flow="up" tooltip-size="medium">
+				Votos dos alunos</p>
 			</h2>
 			<div id="grafico-pizza" class="imagem-grafico"  >
-				<img width="100%" src="./imagens/atividades/graficopizza/questao1.png" usemap="#graficoPizza"/>
+				<img width="100%" src="./imagens/atividades/graficopizza/questao.png" usemap="#graficoPizza"/>
 				<map name="graficoPizza">
 					<area tooltip="gif/inicio.gif" flow="up" tooltip-size="medium" 
 						shape="circle" coords="86,152,30" alt="49" href="#">
@@ -41,27 +41,27 @@
 		</div>
 		
 		<div class="caixa-pergunta">
-			<div class="enunciado">
-				Escolha uma opção
+			<div class="enunciado" tooltip="gif/qual_categoria_mais_votos.gif" flow="up" tooltip-size="medium" >
+				Qual categoria recebeu mais votos?
 			</div>
 			<div class="alternativas">
-				<input type="radio" id="resposta-certa" name="gender" value="male">
-				<label tooltip="gif/inicio.gif" flow="right" tooltip-size="medium" 
-					for="male">Male</label>
+				<input type="radio" name="gender" value="male">
+				<label tooltip="gif/bebida.gif" flow="right" tooltip-size="medium" 
+					for="male">Bebida</label>
 				<br/>
 				
-				<input type="radio" id="resposta-errada1" name="gender" value="female">
-				<label tooltip="gif/inicio.gif" flow="right" tooltip-size="medium" 
-					for="female">Female</label>
+				<input type="radio" name="gender" value="female">
+				<label tooltip="gif/prato_principal.gif" flow="right" tooltip-size="medium" 
+					for="female">Principal</label>
 				<br/>	
 				
-				<input type="radio" id="resposta-errada2" name="gender" value="other">
-				<label tooltip="gif/inicio.gif" flow="right" tooltip-size="medium" 
-					for="other">Other</label>
+				<input type="radio" id="resposta-certa" name="gender" value="other">
+				<label tooltip="gif/sobremesa.gif" flow="right" tooltip-size="medium" 
+					for="other">Sobremesa</label>
 			</div>
 			<div class="centralizado">
-				<button tooltip="gif/inicio.gif" flow="up" tooltip-size="medium"
-					class="bt-atividade  bt-avancar" onclick="avancarAtividade('modulos/atividades/graficopizza/questao2.html')"> Avançar</button>
+				<button tooltip="gif/avancar.gif" flow="up" tooltip-size="medium"
+					class="bt-atividade  bt-avancar" onclick="avancarAtividade('modulos/atividades/escolhaatividade.html')"> Avançar</button>
 			</div>
 		</div>
 	</div>
@@ -70,15 +70,14 @@
 	<div id="ajudaAtividade" class="modal">
 
 	  <!-- Modal content -->
-	  <div class="modal-content">		
+	  <div class="modal-content ajuda">		
 		<div class="texto-ajuda">
-			<p align="left">Lorem Ipsum is simply dummy text <br/>
-			of the printing and typesetting industry.<br/>
-			Lorem Ipsum has been the industry's <br/>
-			standard dummy text ever since the 1500s, <br/>
-			when an unknown printer took a galley of type <br/>
-			and scrambled it to make a type specimen book.<br/>
-			It has survived not only five centuries</p>
+			<p align="left" tooltip="gif/observe_grafico_tamanho_pizza.gif" flow="down" tooltip-size="medium">
+			Observe o tamanho de cada fatia no gráfico <br/>
+			pizza, note que cada tamanho representa<br/>
+			um valor, quanto maior o valor maior será <br/>
+			a fatia. Desta forma, reflita e responda<br/>
+			a questão corretamente!</p>
 		</div>
 		<a class="close">&times;</a>
 	  </div>
@@ -89,15 +88,27 @@
 	<div id="feedbackErro" class="modal">
 
 	  <!-- Modal erro content -->
-	  <div class="modal-content">		
+	  <div class="modal-content erro">		
 		<div class="texto-ajuda">
-			<p align="left">Lorem Ipsum is simply dummy text <br/>
-			of the printing and typesetting industry.<br/>
-			Lorem Ipsum has been the industry's <br/>
-			standard dummy text ever since the 1500s, <br/>
-			when an unknown printer took a galley of type <br/>
-			and scrambled it to make a type specimen book.<br/>
-			It has survived not only five centuries</p>
+			<p align="left" tooltip="gif/veja_denovo_o_grafico_ter_certeza_resposta_correta.gif" flow="down" tooltip-size="medium">
+			Veja novamente o gráfico para <br/>
+			ter certeza da resposta correta.<br/></p>
+		</div>
+		<a class="close">&times;</a>
+	  </div>
+	</div>
+	
+	<!-- Modal acerto -->
+	<div id="feedbackErro" class="modal">
+
+	  <!-- Modal acerto content -->
+	<div class="modal-content acerto">		
+		<div class="texto-ajuda">
+			<p align="left" tooltip="gif/grafico_desenho_mostra_valores.gif" flow="down" tooltip-size="medium">
+			Um gráfico é uma figura que apresenta valores <br/>
+			gerais sobre diversas coisas. Sua resposta <br/>
+			mostrou que você entendeu bem sobre gráficos. <br/>
+			Parabéns! <br/></p>
 		</div>
 		<a class="close">&times;</a>
 	  </div>

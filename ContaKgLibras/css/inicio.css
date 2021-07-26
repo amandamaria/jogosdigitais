@@ -1,0 +1,30 @@
+﻿@font-face {
+  font-family: Acme;
+  src: url("../fonte/Acme-Regular.ttf");
+}
+
+body, svg {
+	font-family: Acme;
+}
+
+body, html {
+  height: 98%;
+}
+
+body {
+	background-image: url('../imagens/bg-inicio.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.bt-iniciar {
+	background-image: url('../imagens/atividades/bt-avancar.png');
+}
+
+.bt-iniciar:hover {
+	background-image: url('../imagens/atividades/bt-avancar-hover.png');
+}
+/*Fim botões que aparecem na tela de atividades*/
+
+

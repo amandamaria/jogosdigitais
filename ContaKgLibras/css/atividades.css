@@ -24,7 +24,7 @@ body {
 	max-height: 40em;
 	min-height: 25em;
 	align-items: center;
-	display: flex;
+	display: flow-root;
 	justify-content: center;
 
 	background-image: url('../imagens/caixa-marrom.png');
@@ -217,5 +217,7 @@ input[type="radio"]:checked:after, input[type="radio"]:hover:after {
 }
 
 /*Fim formatação botão de escolha da atividade*/
-
+.columns {
+	
+}
 

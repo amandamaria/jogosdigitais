@@ -16,7 +16,7 @@
 [tooltip]::before {
   content: '';
   border: 5px solid transparent; 
-  z-index: 1001;
+  z-index: 0;
 }
 
 /*É aqui que balão do tooltip é configurado*/
