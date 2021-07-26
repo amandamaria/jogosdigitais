@@ -14,11 +14,11 @@
 		<div class="caixa-atividade-rosa">
 			<h2 class="titulo-grafico">
 				<p tooltip="gif/inicio.gif" flow="up" tooltip-size="medium">
-				Calorias dos alimentos</p>
+				Questão 2</p>
 			</h2>
 			<div id="grafico-pizza" class="imagem-grafico"  >
-				<img width="100%" src="./imagens/atividades/graficobarras/grafico.png" usemap="#graficoBarra"/>
-				<map name="graficoBarra">
+				<img width="100%" src="./imagens/atividades/graficopizza/questao1.png" usemap="#graficoPizza"/>
+				<map name="graficoPizza">
 					<area tooltip="gif/inicio.gif" flow="up" tooltip-size="medium" 
 						shape="circle" coords="86,152,30" alt="49" href="#">
 						
@@ -42,37 +42,26 @@
 		
 		<div class="caixa-pergunta">
 			<div class="enunciado">
-				Qual o alimento mais calórico?
+				Escolha uma opção
 			</div>
 			<div class="alternativas">
-				<input type="radio" name="opcao" value="opcao1">
+				<input type="radio" id="male" name="gender" value="male">
 				<label tooltip="gif/inicio.gif" flow="right" tooltip-size="medium" 
-					for="opcao1">Banana</label>
+					for="male">Male</label>
 				<br/>
 				
-				<input type="radio" name="opcao" value="opcao2">
+				<input type="radio" id="female" name="gender" value="female">
 				<label tooltip="gif/inicio.gif" flow="right" tooltip-size="medium" 
-					for="opcao2">Pão</label>
-				<br/>
-				
-				<input type="radio" id="resposta-certa" name="opcao" value="opcao3">
-				<label tooltip="gif/inicio.gif" flow="right" tooltip-size="medium" 
-					for="opcao3">Queijo</label>
+					for="female">Female</label>
 				<br/>	
 				
-				<input type="radio" name="opcao" value="opcao4">
+				<input type="radio" id="other" name="gender" value="other">
 				<label tooltip="gif/inicio.gif" flow="right" tooltip-size="medium" 
-					for="opcao4">Suco de Laranja</label>
-				<br/>
-				
-				<input type="radio" name="opcao" value="opcao5">
-				<label tooltip="gif/inicio.gif" flow="right" tooltip-size="medium" 
-					for="opcao5">Cuscuz</label>
-								
+					for="other">Other</label>
 			</div>
 			<div class="centralizado">
 				<button tooltip="gif/inicio.gif" flow="up" tooltip-size="medium"
-					class="bt-atividade  bt-avancar" onclick="avancarAtividade('modulos/atividades/graficobarras/questao2.html')"> Avançar</button>
+					class="bt-atividade  bt-avancar" onclick="avancarAtividade('modulos/atividades/graficopizza/questao3.html')"> Avançar</button>
 			</div>
 		</div>
 	</div>
@@ -80,42 +69,33 @@
 	<!-- Modal ajuda -->
 	<div id="ajudaAtividade" class="modal">
 
-	  <!-- Modal content -->
+	  <!-- Modal ajuda content -->
 	  <div class="modal-content">		
 		<div class="texto-ajuda">
-			<p align="left">Observe o gráfico. A barra MAIOR <br/>
-			representa o alimento MAIS CALÓRICO. <br/>
-			Marque a caixa correspondente a <br/>
-			sua resposta e clique em avançar.</p>
+			<p align="left">Lorem Ipsum is simply dummy text <br/>
+			of the printing and typesetting industry.<br/>
+			Lorem Ipsum has been the industry's <br/>
+			standard dummy text ever since the 1500s, <br/>
+			when an unknown printer took a galley of type <br/>
+			and scrambled it to make a type specimen book.<br/>
+			It has survived not only five centuries</p>
 		</div>
-		<a class="close">&times;</a>
+		<a id="fecharModalAjuda" class="close">&times;</a>
 	  </div>
-
-	</div>
-	
+	  
 	<!-- Modal erro -->
 	<div id="feedbackErro" class="modal">
 
 	  <!-- Modal erro content -->
 	  <div class="modal-content">		
 		<div class="texto-ajuda">
-			<p align="left">Veja novamente o gráfico para <br/>
-			ter certeza da resposta correta.<br/></p>
-		</div>
-		<a class="close">&times;</a>
-	  </div>
-	</div>
-	
-	<!-- Modal acerto -->
-	<div id="feedbackAcerto" class="modal">
-
-	  <!-- Modal acerto content -->
-	  <div class="modal-content">		
-		<div class="texto-ajuda">
-			<p align="left">O QUEIJO é o alimento <br/>
-			MAIS calórico. Dessa forma, o tamanho  <br/>
-			da barra desse alimento é MAIOR <br/>
-			do que as outras.</p>
+			<p align="left">Lorem Ipsum is simply dummy text <br/>
+			of the printing and typesetting industry.<br/>
+			Lorem Ipsum has been the industry's <br/>
+			standard dummy text ever since the 1500s, <br/>
+			when an unknown printer took a galley of type <br/>
+			and scrambled it to make a type specimen book.<br/>
+			It has survived not only five centuries</p>
 		</div>
 		<a class="close">&times;</a>
 	  </div>

@@ -33,8 +33,8 @@
   color: #ffff;
   z-index: 1000;
   
-  /*Posição e alinhamento do gif dentro do component*/
-  background-image: url('gif/inicio.gif');
+  /*Posição e alinhamento do gif dentro do component
+  background-image: url('gif/inicio.gif');*/
   background-color: white;
   background-size: cover;
   background-repeat: no-repeat;

@@ -38,11 +38,12 @@ function gerarGraficoPizza(containerId, tituloGrafico) {
 }
 
 function avancarAtividade(proximaTela){
-	if(respostaCerta()) {
-		//ir para próxima tela
-		
+	var respostaCerta = document.getElementById("resposta-certa").checked
+	if(respostaCerta) {
+		abrirModal('feedbackAcerto',proximaTela);
+		//adicionarConteudo(proximaTela);		
 	} else {
 		//exibir feedback
-		alert("Resposta errada");
+		abrirModal("feedbackErro");
 	}
 }

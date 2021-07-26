@@ -1,14 +1,18 @@
 var modal = "";
-var span = document.getElementsByClassName("close")[0];
+var span = null;
 
-function abrirModal(idModal) {
+function abrirModal(idModal, proximaPagina) {
 	modal = document.getElementById(idModal);
-	modal.style.display = "block";
+	spanFechar = modal.firstElementChild.lastElementChild;
 	
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
+	modal.style.display = "block";	
+	
+	spanFechar.onclick = function() {		
+		modal.style.display = "none";
+		if(proximaPagina != undefined) {
+			adicionarConteudo(proximaPagina);
+		}
+	}
 }
 
 //Fechar o modal ao clicar fora

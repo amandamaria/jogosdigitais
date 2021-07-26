@@ -42,7 +42,7 @@
 		
 		<div class="caixa-pergunta">
 			<div class="enunciado">
-				Qual o alimento mais calórico?
+				Qual o alimento menos calórico?
 			</div>
 			<div class="alternativas">
 				<input type="radio" name="opcao" value="opcao1">
@@ -55,12 +55,12 @@
 					for="opcao2">Pão</label>
 				<br/>
 				
-				<input type="radio" id="resposta-certa" name="opcao" value="opcao3">
+				<input type="radio" name="opcao" value="opcao3">
 				<label tooltip="gif/inicio.gif" flow="right" tooltip-size="medium" 
 					for="opcao3">Queijo</label>
 				<br/>	
 				
-				<input type="radio" name="opcao" value="opcao4">
+				<input type="radio" name="opcao" id="resposta-certa" value="opcao4">
 				<label tooltip="gif/inicio.gif" flow="right" tooltip-size="medium" 
 					for="opcao4">Suco de Laranja</label>
 				<br/>
@@ -72,7 +72,7 @@
 			</div>
 			<div class="centralizado">
 				<button tooltip="gif/inicio.gif" flow="up" tooltip-size="medium"
-					class="bt-atividade  bt-avancar" onclick="avancarAtividade('modulos/atividades/graficobarras/questao2.html')"> Avançar</button>
+					class="bt-atividade  bt-avancar" onclick="avancarAtividade('modulos/atividades/graficobarras/questao3.html')"> Avançar</button>
 			</div>
 		</div>
 	</div>
@@ -112,9 +112,9 @@
 	  <!-- Modal acerto content -->
 	  <div class="modal-content">		
 		<div class="texto-ajuda">
-			<p align="left">O QUEIJO é o alimento <br/>
-			MAIS calórico. Dessa forma, o tamanho  <br/>
-			da barra desse alimento é MAIOR <br/>
+			<p align="left">O SUCO DE LARANJA é o alimento <br/>
+			MENOS calórico. Dessa forma, o tamanho  <br/>
+			da barra desse alimento é MENOR <br/>
 			do que as outras.</p>
 		</div>
 		<a class="close">&times;</a>
