@@ -2,10 +2,10 @@
 <html>
 <head>
 	<title>Conta Quilo Libras</title>	
-	<script>
+	<script type="text/javascript">
 		adicionarMenu();
+		gerarGrid();
 	</script>
-	<script type="text/javascript" src="js/modal.js"></script>
 </head>
 
 <body>
@@ -14,51 +14,28 @@
 		<div class="caixa-atividade-rosa">
 			<h2 class="titulo-grafico">
 				<p tooltip="gif/votos_alunos.gif" flow="up" tooltip-size="medium">
-				Votos dos alunos</p>
+				Votos por alimento</p>
 			</h2>
-			<div id="grafico-pizza" class="imagem-grafico"  >
-				<div class="row">
-				  <div class="column" style="background-color:#aaa;">
-					<h2>Column 1</h2>
-					<p>Some text..</p>
-				  </div>
-				  <div class="column" style="background-color:#bbb;">
-					<h2>Column 2</h2>
-					<p>Some text..</p>
-				  </div>
-				</div>
-
-				<div class="row">
-				  <div class="column" style="background-color:#ccc;">
-					<h2>Column 3</h2>
-					<p>Some text..</p>
-				  </div>
-				  <div class="column" style="background-color:#ddd;">
-					<h2>Column 4</h2>
-					<p>Some text..</p>
-				  </div>
-				</div>
+			<div id="pictografico" class="imagem-grafico"  >
+				<!--<img width="100%" src="./imagens/atividades/construirgrafico/questao1.png" usemap="#graficoBarra"/>-->
+			
 			</div>
 		</div>
 		
 		<div class="caixa-pergunta">
 			<div class="enunciado" tooltip="gif/qual_categoria_mais_votos.gif" flow="up" tooltip-size="medium" >
-				Qual categoria recebeu mais votos?
+				Votos dos alunos
 			</div>
 			<div class="alternativas">
-				<input type="radio" name="gender" value="male">
-				<label tooltip="gif/bebida.gif" flow="right" tooltip-size="medium" 
-					for="male">Bebida</label>
+				<label tooltip="gif/refrigerante.gif" flow="right" tooltip-size="medium" >3 - Refrigerante</label>
 				<br/>
-				
-				<input type="radio" name="gender" value="female">
-				<label tooltip="gif/prato_principal.gif" flow="right" tooltip-size="medium" 
-					for="female">Principal</label>
-				<br/>	
-				
-				<input type="radio" id="resposta-certa" name="gender" value="other">
-				<label tooltip="gif/sobremesa.gif" flow="right" tooltip-size="medium" 
-					for="other">Sobremesa</label>
+				<label tooltip="gif/maca.gif" flow="right" tooltip-size="medium" >2 - Maçã</label>
+				<br/>
+				<label tooltip="gif/pave.gif" flow="right" tooltip-size="medium" >5 - Pavê</label>
+				<br/>
+				<label tooltip="gif/biscoito.gif" flow="right" tooltip-size="medium" >2 - Biscoito</label>
+				<br/>
+				<label tooltip="gif/iogurte.gif" flow="right" tooltip-size="medium" >4 - Iogurte</label>
 			</div>
 			<div class="centralizado">
 				<button tooltip="gif/avancar.gif" flow="up" tooltip-size="medium"

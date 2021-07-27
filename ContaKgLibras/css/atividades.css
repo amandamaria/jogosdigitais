@@ -215,9 +215,64 @@ input[type="radio"]:checked:after, input[type="radio"]:hover:after {
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
-
 /*Fim formatação botão de escolha da atividade*/
-.columns {
-	
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 12%;
+  padding: 10px;
+  
 }
 
+.eixo-x {
+	color: white;  
+}
+
+.pictografico {	
+	width: 100%;
+	max-height: 45em;
+	min-height: 10em;	
+	display: initial;
+	justify-content: center;
+}
+
+.picto-button {
+	background-color: transparent;
+	border-color: transparent;
+	background-size: contain;
+	background-repeat:no-repeat;
+	color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text-invisible {
+	color: transparent;
+}
+
+.fruta {
+	background-image: url('../imagens/atividades/construirgrafico/fruta.png');
+}
+
+.pave {
+	background-image: url('../imagens/atividades/construirgrafico/pave.png');
+}
+
+.cookie {
+	background-image: url('../imagens/atividades/construirgrafico/cookie.png');
+}
+
+.iogurte {
+	background-image: url('../imagens/atividades/construirgrafico/iogurte.png');
+}
+
+.refri {
+	background-image: url('../imagens/atividades/construirgrafico/refri.png');
+}
